@@ -22,7 +22,7 @@
 body {
     font-size: 16px;
     line-height: 1.5;
-    min-height: 340rem;
+    min-height: 320rem;
 }
 
 h1 {
@@ -144,7 +144,7 @@ address {
 
 #work {
     margin: 50px auto;
-    height: 159rem;
+    height: 123rem;
     width: 50%;
 }
 
@@ -257,7 +257,7 @@ footer {
     }
 
     nav {
-        margin: 0 50px;
+        margin: 0 30px;
     }
 
     h1 {
@@ -270,11 +270,12 @@ footer {
     }
 
     ul {
-        width: 100%;
+        width: 60%;
     }
 
     a {
-        padding-right: 1rem;
+        padding-right: 12px;
+        font-size: 1rem;
     }
 
     .div-button {
@@ -308,6 +309,10 @@ footer {
         display: none;
     }
 
+    #work {
+        height: 150rem;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -323,9 +328,9 @@ footer {
     }
 
     #about {
-        margin:  auto;
+        margin: 10px auto;
         width: 80%;
-        height: 92rem;
+        height: 94rem;
     }
 
     #contact {
