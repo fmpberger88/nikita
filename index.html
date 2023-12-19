@@ -47,28 +47,28 @@
     <section id="work">
         <div class="grid-container">
             <div class="image-box">
-                <img src="resources/images/image_1.webp"  alt="personal photo"/>
+                <img src="resources/images/image_1.webp"  alt="art" loading="lazy"/>
             </div>
             <div class="image-box">
-                <img src="resources/images/image_2.webp"  alt="personal photo"/>
+                <img src="resources/images/image_2.webp"  alt="art" loading="lazy"/>
             </div>
             <div class="image-box">
-                <img src="resources/images/image_9.webp"  alt="personal photo"/>
+                <img src="resources/images/image_9.webp"  alt="art" loading="lazy"/>
             </div>
             <div class="image-box">
-                <img src="resources/images/image_4.webp"  alt="personal photo"/>
+                <img src="resources/images/image_4.webp"  alt="art" loading="lazy"/>
             </div>
             <div class="image-box">
-                <img src="resources/images/image_5.webp"  alt="personal photo"/>
+                <img src="resources/images/image_5.webp"  alt="art" loading="lazy"/>
             </div>
             <div class="image-box">
-                <img src="resources/images/image_6.webp"  alt="personal photo"/>
+                <img src="resources/images/image_6.webp"  alt="art" loading="lazy"/>
             </div>
             <div class="image-box">
-                <img src="resources/images/image_7.webp"  alt="personal photo"/>
+                <img src="resources/images/image_7.webp"  alt="art" loading="lazy"/>
             </div>
             <div class="image-box">
-                <img src="resources/images/image_8.webp"  alt="personal photo"/>
+                <img src="resources/images/image_8.webp"  alt="art" loading="lazy"/>
             </div>
         </div>
     </section>
@@ -86,11 +86,11 @@
                 action="https://formspree.io/f/mrgnzprz"
                 method="POST"
         >
-            <input type="text" id="name" name="name" placeholder="Name" />
-            <input type="text" id="vorname" name="vorname" placeholder="Vorname" />
-            <input type="email" id="email" name="email" placeholder="E-Mail" />
-            <input type="tel" id="phone" name="phone" placeholder="Telefon"/>
-            <textarea id="message" name="message" placeholder="Nachricht"></textarea>
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input type="text" id="vorname" name="vorname" placeholder="Vorname" required />
+            <input type="email" id="email" name="email" placeholder="E-Mail" required />
+            <input type="tel" id="phone" name="phone" placeholder="Telefon" required/>
+            <textarea id="message" name="message" placeholder="Nachricht" required></textarea>
             <!-- your other form fields go here -->
             <button id="form-button" type="submit">Send</button>
         </form>
