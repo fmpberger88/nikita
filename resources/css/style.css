@@ -22,7 +22,7 @@
 body {
     font-size: 16px;
     line-height: 1.5;
-    min-height: 320rem;
+    min-height: 220rem;
 }
 
 h1 {
@@ -79,6 +79,7 @@ a:hover {
     color: darkorange;
 }
 
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -94,6 +95,10 @@ button {
     flex-shrink: 0;
     border-radius: 1.875rem;
     border: 5px solid #20BEE6;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #20BEE6;
+    font-family: "Kanit", serif;
 }
 
 .div-button {
@@ -104,7 +109,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70rem;
+    height: 60rem;
     background: url("../images/face-landscape.webp"), lightgray 50% / cover no-repeat;
 }
 
@@ -244,7 +249,7 @@ footer {
     font-size: 1em !important;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 950px) {
 
 
     header {
@@ -256,8 +261,13 @@ footer {
         margin: 0 auto;
     }
 
+    header ul {
+        padding: 1rem;
+    }
+
     nav {
-        margin: 0 30px;
+        margin: 0 20px;
+        width: 80%;
     }
 
     h1 {
@@ -270,12 +280,12 @@ footer {
     }
 
     ul {
-        width: 60%;
+        width: 100%;
     }
 
     a {
-        padding-right: 12px;
-        font-size: 1rem;
+        padding-left: 20px;
+        font-size: 1.25rem;
     }
 
     .div-button {
@@ -283,7 +293,123 @@ footer {
     }
 
     #news {
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 28rem;
+    }
+
+    #news-card {
+        position: relative;
+        height: auto;
+        top: 13rem;
+        left: 0;
+        width: auto;
+    }
+
+    #news-info {
+        font-family: "Kanit", serif;
+        font-size: 1rem;
+    }
+
+    #news-info a {
+        font-size: 2rem !important;
+    }
+
+    address {
+        display: none;
+    }
+
+    #work {
+        height: 50rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+        row-gap: 30px;
+    }
+
+    .image-box img {
+        width: 100%;
+    }
+
+    .image-box:hover {
+        transform: scale(1.7);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #about {
+        margin: 10px auto;
+        width: 80%;
+        height: 68rem;
+    }
+
+    #about p {
+        font-size: 1rem !important;
+    }
+
+    #contact {
+        height: 36rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    input {
+        width: 14rem;
+    }
+
+    textarea {
+        width: 14rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin: 0 20px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        padding: 2rem 4rem;
+    }
+
+    h2 {
+        padding: 2rem 4rem;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    a {
+        padding-right: 12px;
+        font-size: 1.25rem;
+    }
+
+    .div-button {
+        padding: 0 4rem;
+    }
+
+    #news {
+        background-size: cover;
         background-repeat: no-repeat;
         height: 28rem;
     }
@@ -310,7 +436,7 @@ footer {
     }
 
     #work {
-        height: 150rem;
+        height: 155rem;
     }
 
     .grid-container {
@@ -318,19 +444,23 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .image-box img {
+    .grid-container .image-box img {
         width: 100%;
     }
 
     .image-box:hover {
-        transform: scale(1.5);
+        transform: scale(1.7);
         transition: transform 0.3s ease-in-out;
     }
 
     #about {
         margin: 10px auto;
         width: 80%;
-        height: 94rem;
+        height: 68rem;
+    }
+
+    #about p {
+        font-size: 1rem !important;
     }
 
     #contact {
