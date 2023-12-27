@@ -482,3 +482,48 @@ footer {
         width: 14rem;
     }
 }
+
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    opacity: 0;
+    animation: floatUp 5s ease-in forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        bottom: 0;
+        opacity: 1;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
+
+.cookie-popup p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.footer-a {
+    font-size: 1em !important;
+}
+
+.cookie-popup button {
+    padding: 5px 10px;
+}
