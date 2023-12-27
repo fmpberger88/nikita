@@ -101,6 +101,11 @@ button {
     font-family: "Kanit", serif;
 }
 
+button:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
 .div-button {
     padding: 0 9rem;
 }
@@ -234,6 +239,11 @@ textarea {
     font-size: 1.25rem;
     color: #20BEE6;
     font-family: "Kanit", serif;
+}
+
+#form-button:hover {
+    color: darkorange;
+    cursor: pointer;
 }
 
 
@@ -490,6 +500,7 @@ footer {
     border-radius: 50%;
     opacity: 0;
     animation: floatUp 5s ease-in forwards;
+    width: 80%;
 }
 
 @keyframes floatUp {
@@ -505,9 +516,9 @@ footer {
 
 .cookie-popup {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 20px;
+    left: 20px;
+    width: 50%;
     background-color: #f8f8f8;
     padding: 10px;
     text-align: center;
@@ -525,5 +536,11 @@ footer {
 }
 
 .cookie-popup button {
+    width: 130px;
     padding: 5px 10px;
+}
+
+.cookie-popup button:hover {
+    color: darkorange;
+    cursor: pointer;
 }

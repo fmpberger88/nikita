@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     function createBubble() {
         const sectionIntro = document.querySelector('.intro');
         const bubble = document.createElement('div');
@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // You might want to add a limit on how many bubbles can exist at the same time
 });
+
+ */
 
 document.addEventListener('DOMContentLoaded', function() {
     var cookiePopup = document.getElementById('cookiePopup');
